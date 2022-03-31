@@ -1,23 +1,28 @@
 import * as React from "react";
+
+import { ThemeProvider } from "styled-components";
 import GlobalStyle from "../theme/globalStyle";
-import Home from "./home"
-import AboutMe from "./aboutMe"
-import Projects from "./projects"
-import Blog from "./blog"
-import Footer from "./footer"
+import theme from "../theme";
+
+import Home from "./home";
+import AboutMe from "./aboutMe";
+import Projects from "./projects";
+import Blog from "./blog";
+import Footer from "./footer";
 
 const IndexPage = () => {
   return (
     <>
-      <GlobalStyle />
-      <Home />
-      <AboutMe />
-      <Projects />
-      <Blog />
-      <Footer />
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Home />
+        <AboutMe />
+        <Projects />
+        <Blog />
+        <Footer />
+      </ThemeProvider>
     </>
   );
 };
 
 export default IndexPage;
-
