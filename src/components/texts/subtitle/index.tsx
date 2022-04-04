@@ -1,11 +1,26 @@
-import React from 'react'
+import React from "react";
 
 import StyledSubTitle from "./styles";
 
-function SubTitle() {
-  return (
-    <StyledSubTitle>SubTitle</StyledSubTitle>
-  )
+interface ISubTitleProps {
+  text?: string;
+  isGreen: boolean;
+  size?: string;
 }
 
-export default SubTitle
+const defaultProps: ISubTitleProps = {
+  text: "Default subtitle",
+  isGreen: false,
+};
+
+function SubTitle({ text, isGreen, size }: ISubTitleProps) {
+  return (
+    <StyledSubTitle isGreen={isGreen} text={text} size={size}>
+      {text}
+    </StyledSubTitle>
+  );
+}
+
+SubTitle.defaultProps = defaultProps;
+
+export default SubTitle;
