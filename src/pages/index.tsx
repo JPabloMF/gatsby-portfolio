@@ -2,6 +2,7 @@ import * as React from "react";
 
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from "../theme/globalStyle";
+import GlobalFonts from "../fonts/fonts";
 import theme from "../theme";
 
 import Home from "./home";
@@ -15,6 +16,7 @@ const IndexPage = () => {
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
+        <GlobalFonts />
         <Home />
         <AboutMe />
         <Projects />
