@@ -5,6 +5,7 @@ export interface TitleProps {
   theme: {
     fontSize: {
       title: string;
+      subtitle: string;
     };
     colors: {
       cold: {
