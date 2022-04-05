@@ -1,56 +1,24 @@
 import styled from "styled-components";
 
-interface TitleProps {
-  isGreen: boolean;
-  text?: string;
-  size?: string;
-  theme: {
-    fontSize: {
-      title: string;
-    };
-    colors: {
-      cold: {
-        blue: string;
-        lightBlue: string;
-        green: string;
-      };
-      warm: {
-        purple: string;
-        pink: string;
-        orange: string;
-      };
-    };
-  };
-}
-
-const getGradientColor = (isGreen: boolean, theme: any) => {
-  const {
-    colors: {
-      cold: { blue, lightBlue, green },
-      warm: { purple, pink, orange },
-    },
-  } = theme;
-  if (isGreen)
-    return `-webkit-linear-gradient(0deg, ${blue}, ${lightBlue}, ${green});`;
-  return `-webkit-linear-gradient(0deg, ${purple}, ${pink}, ${orange});`;
-};
+import { ITitleProps, getGradientColor } from "../utils";
 
 const StyledTitle = styled.h1`
-  font-size: ${({ size, theme: { fontSize } }: TitleProps) =>
+  margin: 0;
+  font-size: ${({ size, theme: { fontSize } }: ITitleProps) =>
     size || fontSize.title};
-  ${({ isGreen, theme }: TitleProps) =>
-    `background-image: ${getGradientColor(isGreen, theme)}`};
+  ${({ isGreen, theme }: ITitleProps) =>
+    `background-image: ${getGradientColor({ isGreen, theme })}`};
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
   font-family: "Arial-Black";
   position: relative;
-  
+
   &::after {
-    content: "${({ text }: TitleProps) => String(text)}";
-    ${({ isGreen, theme }: TitleProps) =>
-      `background-image: ${getGradientColor(isGreen, theme)}`};
+    content: "${({ text }: ITitleProps) => String(text)}";
+    ${({ isGreen, theme }: ITitleProps) =>
+      `background-image: ${getGradientColor({ isGreen, theme })}`};
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -58,7 +26,7 @@ const StyledTitle = styled.h1`
     top: 0;
     z-index: -1;
     position: absolute;
-    opacity: 0.5;
+    opacity: 0.6;
     filter: blur(10px);
     transform: scaleY(1.15) scaleX(1.02);
   }

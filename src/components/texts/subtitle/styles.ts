@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-import { TitleProps, getGradientColor } from "../utils";
+import { ITitleProps, getGradientColor } from "../utils";
 
 const StyledSubTitle = styled.h2`
   margin: 0;
-  font-size: ${({ size, theme: { fontSize } }: TitleProps) =>
+  font-size: ${({ size, theme: { fontSize } }: ITitleProps) =>
     size || fontSize.subtitle};
-  ${({ isGreen, theme }: TitleProps) =>
+  ${({ isGreen, theme }: ITitleProps) =>
     `background-image: ${getGradientColor({ isGreen, theme })}`};
   background-clip: text;
   -webkit-background-clip: text;
@@ -16,8 +16,8 @@ const StyledSubTitle = styled.h2`
   position: relative;
 
   &::after {
-    content: "${({ text }: TitleProps) => String(text)}";
-    ${({ isGreen, theme }: TitleProps) =>
+    content: "${({ text }: ITitleProps) => String(text)}";
+    ${({ isGreen, theme }: ITitleProps) =>
       `background-image: ${getGradientColor({ isGreen, theme })}`};
     background-clip: text;
     -webkit-background-clip: text;

@@ -1,4 +1,4 @@
-export interface TitleProps {
+export interface ITitleProps {
   isGreen: boolean;
   text?: string;
   size?: string;
