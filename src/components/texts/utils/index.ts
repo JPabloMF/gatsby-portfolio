@@ -22,6 +22,21 @@ export interface ITitleProps {
   };
 }
 
+export interface ITextProps {
+  isGray: boolean;
+  text?: string;
+  size?: string;
+  theme: {
+    fontSize: {
+      text: string;
+    };
+    colors: {
+      gray: string;
+      white: string;
+    };
+  };
+}
+
 interface IGradientColor {
     isGreen: boolean;
     theme: {
