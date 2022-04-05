@@ -24,7 +24,6 @@ const StyledSubTitle = styled.h2`
     -webkit-text-fill-color: transparent;
     left: -5px;
     top: 0;
-    z-index: -1;
     position: absolute;
     opacity: 0.6;
     filter: blur(10px);
