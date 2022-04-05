@@ -14,6 +14,11 @@ const theme = {
       pink: "#c1429b",
       orange: "#ff9571",
     },
+    white: "#fff",
+    grey: "#415162",
+    darkBlue: "#0c1013",
+    blue: "#141a1f",
+    lightBlue: "#1f272f",
   },
 };
 
