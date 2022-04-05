@@ -1,7 +1,8 @@
 const theme = {
   fontSize: {
     title: "9.5rem",
-    subtitle: "3.5rem",
+    subtitle: "4.5rem",
+    text: "1.5rem",
   },
   colors: {
     cold: {
@@ -15,7 +16,7 @@ const theme = {
       orange: "#ff9571",
     },
     white: "#fff",
-    grey: "#415162",
+    gray: "#415162",
     darkBlue: "#0c1013",
     blue: "#141a1f",
     lightBlue: "#1f272f",
