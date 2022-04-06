@@ -3,6 +3,7 @@ const theme = {
     title: "9.5rem",
     subtitle: "4.5rem",
     text: "1.5rem",
+    icons: "4rem",
   },
   colors: {
     cold: {
