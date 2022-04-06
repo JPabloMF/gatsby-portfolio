@@ -22,6 +22,7 @@ export const StyledContainer = styled.div`
   background-image: url(${homeShape});
   background-repeat: no-repeat;
   background-position: right;
+  background-size: contain;
 `;
 
 export const StyledTextContainer = styled.div`
