@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-import { ITitleProps, getGradientColor } from "../utils";
+import { ITitleProps } from "../utils";
+import { getGradientColor } from "../../../utils";
 
 const StyledTitle = styled.h1`
   margin: 0;
