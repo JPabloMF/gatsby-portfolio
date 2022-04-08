@@ -49,7 +49,7 @@ export const StyledNav = styled.button`
   }
 
   &.right {
-    right: -50px;
+    right: 0;
     transform: translateX(100%) translatey(-50%);
   }
 `;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { TiChevronLeftOutline, TiChevronRightOutline } from "react-icons/ti";
+import { TiChevronLeft, TiChevronRight } from "react-icons/ti";
 
 import { StyledCarousel, StyledNav, StyledCardContainer } from "./styles";
 
@@ -15,7 +15,7 @@ function Carousel({ children }: ICarouselProps) {
     <StyledCarousel>
       {active > 0 && (
         <StyledNav className="left" onClick={() => setActive((i) => i - 1)}>
-          <TiChevronLeftOutline />
+          <TiChevronLeft />
         </StyledNav>
       )}
       {React.Children.map(children, (child: React.ReactNode, index: number) => (
@@ -31,7 +31,7 @@ function Carousel({ children }: ICarouselProps) {
       ))}
       {active < count - 1 && (
         <StyledNav className="right" onClick={() => setActive((i) => i + 1)}>
-          <TiChevronRightOutline />
+          <TiChevronRight />
         </StyledNav>
       )}
     </StyledCarousel>

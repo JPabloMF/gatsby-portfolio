@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt } from "react-icons/fa";
-import { SiRedux, SiTypescript } from "react-icons/si";
+import { SiRedux, SiTypescript, SiGodotengine, SiAseprite } from "react-icons/si";
 
 interface IIconProps {
   size?: string;
@@ -18,6 +18,8 @@ interface IIconProps {
         react: string;
         redux: string;
         typescript: string;
+        godot: string;
+        aseprite: string;
       };
     };
   };
@@ -58,6 +60,16 @@ const StyledTypescriptIcon = styled(SiTypescript)`
   color: ${({ theme }: IIconProps) => theme.colors.tech.typescript};
 `;
 
+const StyledGodotIcon = styled(SiGodotengine)`
+  font-size: ${({ theme, size }: IIconProps) => size || theme.fontSize.icons};
+  color: ${({ theme }: IIconProps) => theme.colors.tech.godot};
+`;
+
+const StyledAsepriteIcon = styled(SiAseprite)`
+  font-size: ${({ theme, size }: IIconProps) => size || theme.fontSize.icons};
+  color: ${({ theme }: IIconProps) => theme.colors.tech.aseprite};
+`;
+
 export {
   StyledHTMLIcon as IHTML,
   StyledCSSIcon as ICSS,
@@ -66,4 +78,6 @@ export {
   StyledGitIcon as IGit,
   StyledReduxIcon as IRedux,
   StyledTypescriptIcon as ITypescript,
+  StyledGodotIcon as IGodot,
+  StyledAsepriteIcon as IAseprite,
 };

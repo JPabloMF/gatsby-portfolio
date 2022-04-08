@@ -34,6 +34,8 @@ const theme = {
       redux: "#764abc",
       git: "#e84e31",
       typescript: "#2f74c0",
+      godot: "#458dc0",
+      aseprite: "#ffffff"
     },
     white: "#fff",
     gray: "#415162",
