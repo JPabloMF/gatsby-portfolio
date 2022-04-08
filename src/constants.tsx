@@ -1,6 +1,19 @@
+import React from "react";
 import minerLight from "./images/projects/minerlight.png";
 import dailyfity from "./images/projects/dailyfity.png";
 import cryptocurrencies from "./images/projects/cryptocurrencies.png";
+
+import {
+  IHTML,
+  ICSS,
+  IJS,
+  IReact,
+  IRedux,
+  IGit,
+  ITypescript,
+  IGodot,
+  IAseprite,
+} from "./components/icons";
 
 export const CAROUSEL_PROJECTS = [
   {
@@ -36,3 +49,15 @@ export const CAROUSEL_PROJECTS = [
     },
   },
 ];
+
+export const MAP_ICONS = {
+  html: <IHTML size="35px" />,
+  css: <ICSS size="35px"/>,
+  js: <IJS size="35px"/>,
+  react: <IReact size="35px" />,
+  redux: <IRedux size="35px"/>,
+  git: <IGit size="35px"/>,
+  typescript: <ITypescript size="35px"/>,
+  godot: <IGodot size="35px"/>,
+  aseprite: <IAseprite size="35px"/>,
+};
