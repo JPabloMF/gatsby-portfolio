@@ -14,11 +14,17 @@ const theme = {
       blue: "#386ae8",
       lightBlue: "#38e8de",
       green: "#31e184",
+      transparentBlue: "#386ae83b",
+      transparentLightBlue: "#38e8de38",
+      transparentGreen: "#31e18430",
     },
     warm: {
       purple: "#603b9b",
       pink: "#c1429b",
       orange: "#ff9571",
+      transparentPurple: "#603b9b40",
+      transparentPink: "#c1429b42",
+      transparentOrange: "#ff95713d",
     },
     tech: {
       html: "#e34c26",
