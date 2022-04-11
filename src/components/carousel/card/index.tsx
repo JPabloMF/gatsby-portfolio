@@ -8,6 +8,7 @@ import {
   StyledCardInfoIconsContainer,
 } from "./styles";
 import { Text } from "../../texts";
+import Link from "../../link";
 import { MAP_ICONS } from "../../../constants";
 import { IoEnterOutline } from "react-icons/io5";
 
@@ -40,6 +41,8 @@ const defaultProps: ICardProps = {
 };
 
 function Card({ index, project }: ICardProps) {
+  const isGreenButton = index % 2 === 0 ? true : false;
+
   return (
     <StyledCard index={index} backgroundImage={project.backgroundImage}>
       <StyledCardInfo>
@@ -50,10 +53,13 @@ function Card({ index, project }: ICardProps) {
             {project.technologies.map((technology) => MAP_ICONS[technology])}
           </StyledCardInfoIconsContainer>
         </StyledCardInfoDescriptionContainer>
-        <StyledLink href={project.button.link} index={index} target="_blank">
+        <Link
+          href={project.button.link}
+          isGreen={isGreenButton}
+        >
           <Text text={project.button.title} size="18px" />
           <IoEnterOutline />
-        </StyledLink>
+        </Link>
       </StyledCardInfo>
     </StyledCard>
   );
