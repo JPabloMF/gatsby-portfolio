@@ -24,6 +24,8 @@ export interface ITitleProps {
 
 export interface ITextProps {
   isGray: boolean;
+  isGreen: boolean;
+  isOrange: boolean;
   text?: string;
   size?: string;
   isBold?: boolean;
@@ -36,6 +38,12 @@ export interface ITextProps {
       initial: string;
     };
     colors: {
+      cold:{
+        green: string;
+      };
+      warm: {
+        orange: string;
+      };
       gray: string;
       white: string;
     };

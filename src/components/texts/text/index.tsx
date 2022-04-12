@@ -7,18 +7,29 @@ interface ITextProps {
   isGray: boolean;
   size?: string;
   isBold?: boolean;
+  isGreen: boolean;
+  isOrange: boolean;
 }
 
 const defaultProps: ITextProps = {
   text: "Default text",
   isGray: false,
   isBold: false,
+  isGreen: false,
+  isOrange: false,
 };
 
 
-function Text({ text, isGray, size, isBold }: ITextProps) {
+function Text({ text, isGray, size, isBold, isGreen, isOrange }: ITextProps) {
   return (
-    <StyledText isGray={isGray} text={text} size={size} isBold={isBold}>
+    <StyledText
+      isGray={isGray}
+      text={text}
+      size={size}
+      isBold={isBold}
+      isGreen={isGreen}
+      isOrange={isOrange}
+    >
       {text}
     </StyledText>
   );
