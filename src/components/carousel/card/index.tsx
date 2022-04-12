@@ -50,13 +50,14 @@ function Card({ index, project }: ICardProps) {
           <Text text={project.title} isBold size="30px" />
           <Text text={project.description} size="18px" />
           <StyledCardInfoIconsContainer>
-            {project.technologies.map((technology) => MAP_ICONS[technology])}
+            {project.technologies.map((technology, index) => (
+              <React.Fragment key={index}>
+                {MAP_ICONS[technology]}
+              </React.Fragment>
+            ))}
           </StyledCardInfoIconsContainer>
         </StyledCardInfoDescriptionContainer>
-        <Link
-          href={project.button.link}
-          isGreen={isGreenButton}
-        >
+        <Link href={project.button.link} isGreen={isGreenButton}>
           <Text text={project.button.title} size="18px" />
           <IoEnterOutline />
         </Link>
