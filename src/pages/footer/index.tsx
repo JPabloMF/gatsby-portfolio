@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+
+import { Text } from "../../components/texts";
+import { StyledFooter } from "./styles";
 
 function Footer() {
   return (
-    <div>Footer</div>
-  )
+    <StyledFooter>
+      <Text text="Happy coding!" size="28px" isGray />
+    </StyledFooter>
+  );
 }
 
-export default Footer
+export default Footer;
