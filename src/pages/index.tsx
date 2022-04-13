@@ -5,6 +5,7 @@ import GlobalStyle from "../theme/globalStyle";
 import GlobalFonts from "../fonts/fonts";
 import theme from "../theme";
 
+import Menu from "../components/menu";
 import Home from "./home";
 import AboutMe from "./aboutMe";
 import Projects from "./projects";
@@ -17,6 +18,7 @@ const IndexPage = () => {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <GlobalFonts />
+        <Menu />
         <Home />
         <AboutMe />
         <Projects />

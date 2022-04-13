@@ -12,7 +12,7 @@ import { MAP_BLOG_POSTS } from "../../constants";
 
 function Blog() {
   return (
-    <StyledContainer>
+    <StyledContainer id="blogposts">
       <SubTitle isGreen text="Blog Posts" />
       <StyledCardsContainer>
         {MAP_BLOG_POSTS.map((post, index) => (

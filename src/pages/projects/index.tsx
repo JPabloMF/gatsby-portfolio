@@ -8,7 +8,7 @@ import { CAROUSEL_PROJECTS } from "../../constants";
 
 function Projects() {
   return (
-    <StyledContainer>
+    <StyledContainer id="projects">
       <SubTitle text="Projects" />
       <Carousel>
         {CAROUSEL_PROJECTS.map((project, index) => (

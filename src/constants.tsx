@@ -88,3 +88,10 @@ export const MAP_BLOG_POSTS = [
     link: "https://mfblog.netlify.app/javascript/use-strict",
   },
 ];
+
+export const MENU_ITEMS = [
+  {link: "#home"},
+  {link: "#aboutme"},
+  {link: "#projects"},
+  {link: "#blogposts"},
+];

@@ -29,7 +29,7 @@ import hme from "../../images/brands/hme.png";
 
 function AboutMe() {
   return (
-    <StyledContainer>
+    <StyledContainer id="aboutme">
       <SubTitle isGreen text="About me" />
       <Text
         size="30px"

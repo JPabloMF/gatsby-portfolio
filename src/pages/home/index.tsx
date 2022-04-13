@@ -12,7 +12,7 @@ import { Title, SubTitle, Text } from "../../components/texts";
 
 function Home() {
   return (
-    <StyledContainer>
+    <StyledContainer id="home">
       <Title text="Juan Pablo" />
       <SubTitle isGreen text="Front End Developer" />
       <StyledTextContainer>

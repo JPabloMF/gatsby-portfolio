@@ -10,6 +10,9 @@ const GlobalStyle = createGlobalStyle`
     background-color: #0C1013;
     font-family: Open-Sans, Helvetica, Sans-Serif;
   }
+  html {
+    scroll-behavior: smooth;
+  }
 `;
 
 export default GlobalStyle;
