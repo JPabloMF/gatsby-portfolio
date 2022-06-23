@@ -10,9 +10,9 @@ import Link from "../../components/link";
 import Card from "./cards";
 import { MAP_BLOG_POSTS } from "../../constants";
 
-function Blog() {
+function Blog({ innerRef }: { innerRef: any }) {
   return (
-    <StyledContainer id="blogposts">
+    <StyledContainer id="blogposts" ref={innerRef}>
       <SubTitle isGreen text="Blog Posts" />
       <StyledCardsContainer>
         {MAP_BLOG_POSTS.map((post, index) => (

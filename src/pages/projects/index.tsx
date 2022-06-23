@@ -6,9 +6,9 @@ import { Carousel, Card } from "../../components/carousel";
 
 import { CAROUSEL_PROJECTS } from "../../constants";
 
-function Projects() {
+function Projects({ innerRef }: { innerRef: any }) {
   return (
-    <StyledContainer id="projects">
+    <StyledContainer id="projects" ref={innerRef}>
       <SubTitle text="Projects" />
       <Carousel>
         {CAROUSEL_PROJECTS.map((project, index) => (

@@ -10,9 +10,9 @@ import {
 } from "./styles";
 import { Title, SubTitle, Text } from "../../components/texts";
 
-function Home() {
+function Home({ innerRef }: { innerRef: any }) {
   return (
-    <StyledContainer id="home">
+    <StyledContainer id="home" ref={innerRef}>
       <Title text="Juan Pablo" />
       <SubTitle isGreen text="Front End Developer" />
       <StyledTextContainer>
@@ -38,7 +38,7 @@ function Home() {
         >
           <StyledLinkedin />
         </a>
-        <a href="mailto:juanpablo34561@hotmail.com" target="_blank">
+        <a href="mailto:juanpablo45671@gmail.com" target="_blank">
           <StyledMail />
         </a>
       </StyledIconsContainer>

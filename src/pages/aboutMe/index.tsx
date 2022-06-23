@@ -27,9 +27,9 @@ import globant from "../../images/brands/globant.png";
 import trutv from "../../images/brands/trutv.png";
 import hme from "../../images/brands/hme.png";
 
-function AboutMe() {
+function AboutMe({ innerRef }: { innerRef: any }) {
   return (
-    <StyledContainer id="aboutme">
+    <StyledContainer id="aboutme" ref={innerRef}>
       <SubTitle isGreen text="About me" />
       <Text
         size="30px"
